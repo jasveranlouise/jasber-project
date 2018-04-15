@@ -24,62 +24,62 @@ class Welcome extends CI_Controller {
 	}
 	public function inbox()
 	{
-		$this->load->view('inbox');
+		$this->load->view('pages/inbox');
 	}
 	public function error()
 	{
-		$this->load->view('404');
+		$this->load->view('pages/404');
 	}
 	public function blank()
 	{
-		$this->load->view('blank');
+		$this->load->view('pages/blank');
 	}
 	public function calendar()
 	{
-		$this->load->view('calendar');
+		$this->load->view('pages/calendar');
 	}
 	public function faq()
 	{
-		$this->load->view('faq');
+		$this->load->view('pages/faq');
 	}
 	public function forms()
 	{
-		$this->load->view('forms');
+		$this->load->view('pages/forms');
 	}
 	public function gallery()
 	{
-		$this->load->view('gallery');
+		$this->load->view('pages/gallery');
 	}
 	public function graphs()
 	{
-		$this->load->view('graphs');
+		$this->load->view('pages/graphs');
 	}
 	public function layout()
 	{
-		$this->load->view('layout');
+		$this->load->view('pages/layout');
 	}
 	public function maps()
 	{
-		$this->load->view('maps');
+		$this->load->view('pages/maps');
 	}
 	public function profile()
 	{
-		$this->load->view('profile');
+		$this->load->view('pages/profile');
 	}
 	public function signin()
 	{
-		$this->load->view('signin');
+		$this->load->view('pages/signin');
 	}
 	public function signup()
 	{
-		$this->load->view('signup');
+		$this->load->view('pages/signup');
 	}
 	public function typography()
 	{
-		$this->load->view('typography');
+		$this->load->view('pages/typography');
 	}
 	public function validation()
 	{
-		$this->load->view('validation');
+		$this->load->view('pages/validation');
 	}
 }
