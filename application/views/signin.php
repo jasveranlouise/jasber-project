@@ -14,16 +14,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url(); ?>dist/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<script src="js/jquery.min.js"> </script>
-<script src="js/bootstrap.min.js"> </script>
+<link href="<?php echo base_url(); ?>dist/css/style.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url(); ?>dist/css/font-awesome.css" rel="stylesheet"> 
+<script src="<?php echo base_url(); ?>dist/js/jquery.min.js"> </script>
+<script src="<?php echo base_url(); ?>dist/js/bootstrap.min.js"> </script>
 </head>
 <body>
 	<div class="login">
-		<h1><a href="index.html">Minimal </a></h1>
+		<h1><a href="<?php echo site_url('welcome/index');?>">Minimal </a></h1>
 		<div class="login-bottom">
 			<h2>Login</h2>
 			<form>
@@ -47,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="submit" value="login">
 					</label>
 					<p>Do not have an account?</p>
-				<a href="signup.html" class="hvr-shutter-in-horizontal">Signup</a>
+				<a href="<?php echo site_url('welcome/signup'); ?>" class="hvr-shutter-in-horizontal">Signup</a>
 			</div>
 			
 			<div class="clearfix"> </div>
@@ -59,8 +59,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <p> &copy; 2016 Minimal. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>	    </div>  
 <!---->
 <!--scrolling js-->
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="<?php echo base_url(); ?>dist/js/jquery.nicescroll.js"></script>
+	<script src="<?php echo base_url(); ?>dist/js/scripts.js"></script>
 	<!--//scrolling js-->
 </body>
 </html>

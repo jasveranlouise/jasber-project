@@ -14,18 +14,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="<?php echo base_url(); ?> css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url(); ?>dist/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="<?php echo base_url(); ?>css/style.css" rel='stylesheet' type='text/css' />
-<link href="<?php echo base_url(); ?>css/font-awesome.css" rel="stylesheet"> 
-<script src="<?php echo base_url(); ?>js/jquery.min.js"> </script>
+<link href="<?php echo base_url(); ?>dist/css/style.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url(); ?>dist/css/font-awesome.css" rel="stylesheet"> 
+<script src="<?php echo base_url(); ?>dist/js/jquery.min.js"> </script>
 <!-- Mainly scripts -->
-<script src="<?php echo base_url(); ?>js/jquery.metisMenu.js"></script>
-<script src="<?php echo base_url(); ?>js/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/jquery.metisMenu.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/jquery.slimscroll.min.js"></script>
 <!-- Custom and plugin javascript -->
-<link href="<?php echo base_url(); ?>css/custom.css" rel="stylesheet">
-<script src="<?php echo base_url(); ?>js/custom.js"></script>
-<script src="<?php echo base_url(); ?>js/screenfull.js"></script>
+<link href="<?php echo base_url(); ?>dist/css/custom.css" rel="stylesheet">
+<script src="<?php echo base_url(); ?>dist/js/custom.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/screenfull.js"></script>
 		<script>
 		$(function () {
 			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
@@ -45,10 +45,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 		</script>
 
-<!----->
 
-<!--pie-chart--->
-<script src="js/pie-chart.js" type="text/javascript"></script>
+
+<!-->
+<script src="<?php echo base_url(); ?>dist/js/pie-chart.js" type="text/javascript"></script>
  <script type="text/javascript">
 
         $(document).ready(function () {
@@ -87,7 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     </script>
 <!--skycons-icons-->
-<script src="<?php echo base_url(); ?>js/skycons.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/skycons.js"></script>
 <!--//skycons-icons-->
 </head>
 <body>
@@ -186,12 +186,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		              </ul>
 		            </li>
 					<li class="dropdown">
-		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Rackham<i class="caret"></i></span><img src="images/wo.jpg"></a>
+		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Rackham<i class="caret"></i></span><img src="<?php echo base_url(); ?>dist/images/wo.jpg"></a>
 		              <ul class="dropdown-menu " role="menu">
-		                <li><a href="profile.html"><i class="fa fa-user"></i>Edit Profile</a></li>
-		                <li><a href="inbox.html"><i class="fa fa-envelope"></i>Inbox</a></li>
-		                <li><a href="calendar.html"><i class="fa fa-calendar"></i>Calender</a></li>
-		                <li><a href="inbox.html"><i class="fa fa-clipboard"></i>Tasks</a></li>
+		                <li><a href="<?php echo site_url('welcome/profile'); ?>"><i class="fa fa-user"></i>Edit Profile</a></li>
+		                <li><a href="<?php echo site_url('welcome/inbox'); ?>"><i class="fa fa-envelope"></i>Inbox</a></li>
+		                <li><a href="<?php echo site_url('welcome/calendar'); ?>"><i class="fa fa-calendar"></i>Calender</a></li>
+		                <li><a href="<?php echo site_url('welcome/inbox'); ?>"><i class="fa fa-clipboard"></i>Tasks</a></li>
 		              </ul>
 		            </li>
 		           
@@ -206,52 +206,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="nav" id="side-menu">
 				
                     <li>
-                        <a href="index.html" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
+                        <a href="<?php echo site_url('welcome/index'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">Menu Levels</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="graphs.html" class=" hvr-bounce-to-right"> <i class="fa fa-area-chart nav_icon"></i>Graphs</a></li>
+                            <li><a href="<?php echo site_url('welcome/graphs'); ?>" class=" hvr-bounce-to-right"> <i class="fa fa-area-chart nav_icon"></i>Graphs</a></li>
                             
-                            <li><a href="maps.html" class=" hvr-bounce-to-right"><i class="fa fa-map-marker nav_icon"></i>Maps</a></li>
+                            <li><a href="<?php echo site_url('welcome/maps'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-map-marker nav_icon"></i>Maps</a></li>
 			
-						<li><a href="typography.html" class=" hvr-bounce-to-right"><i class="fa fa-file-text-o nav_icon"></i>Typography</a></li>
+						<li><a href="<?php echo site_url('welcome/typography'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-file-text-o nav_icon"></i>Typography</a></li>
 
 					   </ul>
                     </li>
 					 <li>
-                        <a href="inbox.html" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Inbox</span> </a>
+                        <a href="<?php echo site_url('welcome/inbox'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Inbox</span> </a>
                     </li>
                     
                     <li>
-                        <a href="gallery.html" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Gallery</span> </a>
+                        <a href="<?php echo site_url('welcome/gallery'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Gallery</span> </a>
                     </li>
                      <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Pages</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="404.html" class=" hvr-bounce-to-right"> <i class="fa fa-info-circle nav_icon"></i>Error 404</a></li>
-                            <li><a href="faq.html" class=" hvr-bounce-to-right"><i class="fa fa-question-circle nav_icon"></i>FAQ</a></li>
-                            <li><a href="blank.html" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Blank</a></li>
+                            <li><a href="<?php echo site_url('welcome/error'); ?>" class=" hvr-bounce-to-right"> <i class="fa fa-info-circle nav_icon"></i>Error 404</a></li>
+                            <li><a href="<?php echo site_url('welcome/faq'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-question-circle nav_icon"></i>FAQ</a></li>
+                            <li><a href="<?php echo site_url('welcome/blank'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Blank</a></li>
                        </ul>
                     </li>
                      <li>
-                        <a href="layout.html" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i> <span class="nav-label">Grid Layouts</span> </a>
+                        <a href="<?php echo site_url('welcome/layout'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i> <span class="nav-label">Grid Layouts</span> </a>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-list nav_icon"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="forms.html" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Basic forms</a></li>
-                            <li><a href="validation.html" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Validation</a></li>
+                            <li><a href="<?php echo site_url('welcome/forms'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Basic forms</a></li>
+                            <li><a href="<?php echo site_url('welcome/validation'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Validation</a></li>
                         </ul>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cog nav_icon"></i> <span class="nav-label">Settings</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="signin.html" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Signin</a></li>
-                            <li><a href="signup.html" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Singup</a></li>
+                            <li><a href="<?php echo site_url('welcome/signin'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Signin</a></li>
+                            <li><a href="<?php echo site_url('welcome/signup'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Singup</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -265,7 +265,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    <div class="banner">
 		   
 				<h2>
-				<a href="index.html">Home</a>
+				<a href="<?php echo site_url('welcome/index'); ?>">Home</a>
 				<i class="fa fa-angle-right"></i>
 				<span>Dashboard</span>
 				</h2>
@@ -320,9 +320,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<!--graph-->
-		<link rel="stylesheet" href="<?php echo base_url(); ?>css/graph.css">
+		<link rel="stylesheet" href="<?php echo base_url(); ?>dist/css/graph.css">
 		<!--//graph-->
-							<script src="<?php echo base_url(); ?>js/jquery.flot.js"></script>
+							<script src="<?php echo base_url(); ?>dist/js/jquery.flot.js"></script>
 									<script>
 									$(document).ready(function () {
 									
@@ -455,11 +455,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-5">
 					 <div class="cal1 cal_2"><div class="clndr"><div class="clndr-controls"><div class="clndr-control-button"><p class="clndr-previous-button">previous</p></div><div class="month">July 2015</div><div class="clndr-control-button rightalign"><p class="clndr-next-button">next</p></div></div><table class="clndr-table" border="0" cellspacing="0" cellpadding="0"><thead><tr class="header-days"><td class="header-day">S</td><td class="header-day">M</td><td class="header-day">T</td><td class="header-day">W</td><td class="header-day">T</td><td class="header-day">F</td><td class="header-day">S</td></tr></thead><tbody><tr><td class="day adjacent-month last-month calendar-day-2015-06-28"><div class="day-contents">28</div></td><td class="day adjacent-month last-month calendar-day-2015-06-29"><div class="day-contents">29</div></td><td class="day adjacent-month last-month calendar-day-2015-06-30"><div class="day-contents">30</div></td><td class="day calendar-day-2015-07-01"><div class="day-contents">1</div></td><td class="day calendar-day-2015-07-02"><div class="day-contents">2</div></td><td class="day calendar-day-2015-07-03"><div class="day-contents">3</div></td><td class="day calendar-day-2015-07-04"><div class="day-contents">4</div></td></tr><tr><td class="day calendar-day-2015-07-05"><div class="day-contents">5</div></td><td class="day calendar-day-2015-07-06"><div class="day-contents">6</div></td><td class="day calendar-day-2015-07-07"><div class="day-contents">7</div></td><td class="day calendar-day-2015-07-08"><div class="day-contents">8</div></td><td class="day calendar-day-2015-07-09"><div class="day-contents">9</div></td><td class="day calendar-day-2015-07-10"><div class="day-contents">10</div></td><td class="day calendar-day-2015-07-11"><div class="day-contents">11</div></td></tr><tr><td class="day calendar-day-2015-07-12"><div class="day-contents">12</div></td><td class="day calendar-day-2015-07-13"><div class="day-contents">13</div></td><td class="day calendar-day-2015-07-14"><div class="day-contents">14</div></td><td class="day calendar-day-2015-07-15"><div class="day-contents">15</div></td><td class="day calendar-day-2015-07-16"><div class="day-contents">16</div></td><td class="day calendar-day-2015-07-17"><div class="day-contents">17</div></td><td class="day calendar-day-2015-07-18"><div class="day-contents">18</div></td></tr><tr><td class="day calendar-day-2015-07-19"><div class="day-contents">19</div></td><td class="day calendar-day-2015-07-20"><div class="day-contents">20</div></td><td class="day calendar-day-2015-07-21"><div class="day-contents">21</div></td><td class="day calendar-day-2015-07-22"><div class="day-contents">22</div></td><td class="day calendar-day-2015-07-23"><div class="day-contents">23</div></td><td class="day calendar-day-2015-07-24"><div class="day-contents">24</div></td><td class="day calendar-day-2015-07-25"><div class="day-contents">25</div></td></tr><tr><td class="day calendar-day-2015-07-26"><div class="day-contents">26</div></td><td class="day calendar-day-2015-07-27"><div class="day-contents">27</div></td><td class="day calendar-day-2015-07-28"><div class="day-contents">28</div></td><td class="day calendar-day-2015-07-29"><div class="day-contents">29</div></td><td class="day calendar-day-2015-07-30"><div class="day-contents">30</div></td><td class="day calendar-day-2015-07-31"><div class="day-contents">31</div></td><td class="day adjacent-month next-month calendar-day-2015-08-01"><div class="day-contents">1</div></td></tr></tbody></table></div></div>
 			  <!----Calender -------->
-			<link rel="stylesheet" href="<?php echo base_url(); ?>css/clndr.css" type="text/css" />
-			<script src="<?php echo base_url(); ?>js/underscore-min.js" type="text/javascript"></script>
-			<script src= "<?php echo base_url(); ?>js/moment-2.2.1.js" type="text/javascript"></script>
-			<script src="<?php echo base_url(); ?>js/clndr.js" type="text/javascript"></script>
-			<script src="<?php echo base_url(); ?>js/site.js" type="text/javascript"></script>
+			<link rel="stylesheet" href="<?php echo base_url(); ?>dist/css/clndr.css" type="text/css" />
+			<script src="<?php echo base_url(); ?>dist/js/underscore-min.js" type="text/javascript"></script>
+			<script src= "<?php echo base_url(); ?>dist/js/moment-2.2.1.js" type="text/javascript"></script>
+			<script src="<?php echo base_url(); ?>dist/js/clndr.js" type="text/javascript"></script>
+			<script src="<?php echo base_url(); ?>dist/js/site.js" type="text/javascript"></script>
 			<!----End Calender -------->
 			</div>
 			<div class="col-md-7 mid-content-top">
@@ -493,8 +493,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!--//sreen-gallery-cursual---->
 		<!-- requried-jsfiles-for owl -->
-		<link href="<?php echo base_url(); ?>css/owl.carousel.css" rel="stylesheet">
-		<script src="<?php echo base_url(); ?>js/owl.carousel.js"></script>
+		<link href="<?php echo base_url(); ?>dist/css/owl.carousel.css" rel="stylesheet">
+		<script src="<?php echo base_url(); ?>dist/js/owl.carousel.js"></script>
 			<script>
 				$(document).ready(function() {
 					$("#owl-demo").owlCarousel({
@@ -750,10 +750,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      </div>
 <!---->
 <!--scrolling js-->
-	<script src="<?php echo base_url(); ?>js/jquery.nicescroll.js"></script>
-	<script src="<?php echo base_url(); ?>js/scripts.js"></script>
+	<script src="<?php echo base_url(); ?>dist/js/jquery.nicescroll.js"></script>
+	<script src="<?php echo base_url(); ?>dist/js/scripts.js"></script>
 	<!--//scrolling js-->
-	<script src="<?php echo base_url(); ?>js/bootstrap.min.js"> </script>
+	<script src="<?php echo base_url(); ?>dist/js/bootstrap.min.js"> </script>
 </body>
 </html>
 

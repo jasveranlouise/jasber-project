@@ -14,20 +14,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url(); ?>dist/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<script src="js/jquery.min.js"> </script>
-<script src="js/bootstrap.min.js"> </script>
+<link href="<?php echo base_url(); ?>dist/css/style.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url(); ?>dist/css/font-awesome.css" rel="stylesheet"> 
+<script src="<?php echo base_url(); ?>dist/js/jquery.min.js"> </script>
+<script src="<?php echo base_url(); ?>dist/js/bootstrap.min.js"> </script>
   
 <!-- Mainly scripts -->
-<script src="js/jquery.metisMenu.js"></script>
-<script src="js/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/jquery.metisMenu.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/jquery.slimscroll.min.js"></script>
 <!-- Custom and plugin javascript -->
-<link href="css/custom.css" rel="stylesheet">
-<script src="js/custom.js"></script>
-<script src="js/screenfull.js"></script>
+<link href="<?php echo base_url(); ?>dist/css/custom.css" rel="stylesheet">
+<script src="<?php echo base_url(); ?>dist/js/custom.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/screenfull.js"></script>
 		<script>
 		$(function () {
 			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
@@ -143,10 +143,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		              </ul>
 		            </li>
 					<li class="dropdown">
-		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Rackham<i class="caret"></i></span><img src="images/wo.jpg"></a>
+		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Rackham<i class="caret"></i></span><img src="<?php echo base_url(); ?>dist/images/wo.jpg"></a>
 		              <ul class="dropdown-menu " role="menu">
 		                <li><a href="profile.html"><i class="fa fa-user"></i>Edit Profile</a></li>
-		                <li><a href="inbox.html"><i class="fa fa-envelope"></i>Inbox</a></li>
+		                <li><a href="<?php echo site_url('welcome/inbox'); ?>"><i class="fa fa-envelope"></i>Inbox</a></li>
 		                <li><a href="calendar.html"><i class="fa fa-calendar"></i>Calender</a></li>
 		                <li><a href="inbox.html"><i class="fa fa-clipboard"></i>Tasks</a></li>
 		              </ul>
@@ -163,52 +163,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="nav" id="side-menu">
 				
                     <li>
-                        <a href="index.html" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
+                        <a href="<?php echo site_url('welcome/index'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">Menu Levels</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="graphs.html" class=" hvr-bounce-to-right"> <i class="fa fa-area-chart nav_icon"></i>Graphs</a></li>
+                            <li><a href="<?php echo site_url('welcome/graphs'); ?>" class=" hvr-bounce-to-right"> <i class="fa fa-area-chart nav_icon"></i>Graphs</a></li>
                             
-                            <li><a href="maps.html" class=" hvr-bounce-to-right"><i class="fa fa-map-marker nav_icon"></i>Maps</a></li>
+                            <li><a href="<?php echo site_url('welcome/maps'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-map-marker nav_icon"></i>Maps</a></li>
 			
-						<li><a href="typography.html" class=" hvr-bounce-to-right"><i class="fa fa-file-text-o nav_icon"></i>Typography</a></li>
+						<li><a href="<?php echo site_url('welcome/typography'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-file-text-o nav_icon"></i>Typography</a></li>
 
 					   </ul>
                     </li>
 					 <li>
-                        <a href="inbox.html" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Inbox</span> </a>
+                        <a href="<?php echo site_url('welcome/inbox'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Inbox</span> </a>
                     </li>
                     
                     <li>
-                        <a href="gallery.html" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Gallery</span> </a>
+                        <a href="<?php echo site_url('welcome/gallery'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Gallery</span> </a>
                     </li>
                      <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Pages</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="404.html" class=" hvr-bounce-to-right"> <i class="fa fa-info-circle nav_icon"></i>Error 404</a></li>
-                            <li><a href="faq.html" class=" hvr-bounce-to-right"><i class="fa fa-question-circle nav_icon"></i>FAQ</a></li>
-                            <li><a href="blank.html" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Blank</a></li>
+                            <li><a href="<?php echo site_url('welcome/error'); ?>" class=" hvr-bounce-to-right"> <i class="fa fa-info-circle nav_icon"></i>Error 404</a></li>
+                            <li><a href="<?php echo site_url('welcome/faq'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-question-circle nav_icon"></i>FAQ</a></li>
+                            <li><a href="<?php echo site_url('welcome/blank'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Blank</a></li>
                        </ul>
                     </li>
                      <li>
-                        <a href="layout.html" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i> <span class="nav-label">Grid Layouts</span> </a>
+                        <a href="<?php echo site_url('welcome/layout'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i> <span class="nav-label">Grid Layouts</span> </a>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-list nav_icon"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="forms.html" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Basic forms</a></li>
-                            <li><a href="validation.html" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Validation</a></li>
+                            <li><a href="<?php echo site_url('welcome/forms'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Basic forms</a></li>
+                            <li><a href="<?php echo site_url('welcome/validation'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Validation</a></li>
                         </ul>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cog nav_icon"></i> <span class="nav-label">Settings</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="signin.html" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Signin</a></li>
-                            <li><a href="signup.html" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Singup</a></li>
+                            <li><a href="<?php echo site_url('welcome/signin'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Signin</a></li>
+                            <li><a href="<?php echo site_url('welcome/signup'); ?>" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Singup</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -221,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  	<!--banner-->	
 		     <div class="banner">
 		    	<h2>
-				<a href="index.html">Home</a>
+				<a href="<?php echo site_url('welcome/index'); ?>">Home</a>
 				<i class="fa fa-angle-right"></i>
 				<span>Inbox</span>
 				</h2>
@@ -343,7 +343,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <tbody>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -363,7 +363,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                        <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in1.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in1.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -382,7 +382,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in2.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in2.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -401,7 +401,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in3.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in3.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -420,7 +420,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in4.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in4.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -439,7 +439,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in5.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in5.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -458,7 +458,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in6.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in6.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -477,7 +477,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in7.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in7.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -496,7 +496,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in8.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in8.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -515,7 +515,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in9.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in9.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -534,7 +534,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in10.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in10.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -553,7 +553,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in11.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in11.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -660,7 +660,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     
                        <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in1.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in1.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -679,7 +679,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in2.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in2.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -698,7 +698,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in3.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in3.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -717,7 +717,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in4.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in4.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -736,7 +736,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in5.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in5.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -755,7 +755,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in6.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in6.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -863,7 +863,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in6.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in6.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -882,7 +882,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in7.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in7.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -901,7 +901,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in8.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in8.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -920,7 +920,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in9.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in9.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -939,7 +939,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in10.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in10.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -958,7 +958,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in11.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in11.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1064,7 +1064,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <tbody>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1084,7 +1084,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                        <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in1.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in1.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1103,7 +1103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in2.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in2.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1122,7 +1122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in3.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in3.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1141,7 +1141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in4.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in4.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1160,7 +1160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in5.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in5.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1268,7 +1268,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                        
                        <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in1.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in1.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1288,7 +1288,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                        
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in3.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in3.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1308,7 +1308,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                        
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in5.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in5.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1328,7 +1328,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                        
                         <tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in7.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in7.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1348,7 +1348,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in10.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in10.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1367,7 +1367,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </tr>
 						<tr class="table-row">
                             <td class="table-img">
-                               <img src="images/in11.jpg" alt="" />
+                               <img src="<?php echo base_url(); ?>dist/images/in11.jpg" alt="" />
                             </td>
                             <td class="table-text">
                             	<h6> Lorem ipsum</h6>
@@ -1406,8 +1406,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      
 <!---->
 <!--scrolling js-->
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="<?php echo base_url(); ?>dist/js/jquery.nicescroll.js"></script>
+	<script src="<?php echo base_url(); ?>dist/js/scripts.js"></script>
 	<!--//scrolling js-->
 </body>
 </html>
